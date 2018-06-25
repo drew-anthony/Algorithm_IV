@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>basicFoundationI</title>
+</head>
+<body>
+	<script>
+		function greaterThanY(arr,Y){
+			var count=0;
+			for(i=0;i<arr.length;i++){
+				if(arr[i]>Y){
+					count++;
+				}
+			}
+		}
+		function maxMinAvg(arr){
+			var max=arr[0];
+			var min=arr[0];
+			var sum=0;
+
+			for(i=0;i<arr.length;i++){
+				if(arr[i]>max){
+					max=arr[i];
+				}
+				if(arr[i]<min){
+					min=arr[i];
+				}
+				sum+=arr[i];
+			}
+			var newArr=[max,min,sum/arr.length]
+
+			return newArr;
+		}
+		function numberToString(arr){
+			for(i=0;i<arr.length;i++){
+				if(arr[i]<0){
+					arr[i]='Dojo'
+				}
+			}
+			return arr;
+		}
+		function removeVals(arr){
+			for(i=0;i<arr.length;i++){
+				var newArr=[arr[1],arr[2],arr[arr.length-1]];
+			}
+			return newArr;
+		}
+	</script>
+</body>
+</html>
